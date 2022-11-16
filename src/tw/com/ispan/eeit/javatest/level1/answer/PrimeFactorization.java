@@ -30,7 +30,7 @@ public class PrimeFactorization {
 				System.out.print(i + "*");
 			}
 
-			if (number == i) {// 上面的都不能整除，則代表number是一個質數
+			if (number == i) {// 若i無法整除number，則代表number是一個質數
 				System.out.print(i);
 			}
 		}
