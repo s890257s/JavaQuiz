@@ -3,12 +3,12 @@ package tw.com.ispan.eeit.javatest.level1.answer;
 import java.util.Scanner;
 
 /**
- * 【題目】 
- * 輸入一個整數，對此數做質因數分解，並輸出結果。
- * 
- * 【備註】 
- * 質數為一個大於1的整數，且除了1和本身以外，沒有其他的因數。 
- * 解答僅供參考，並非唯一解。
+ * 【題目】 <br>
+ * 輸入一個整數，對此數做質因數分解，並輸出結果。<br>
+ * <br>
+ * 【備註】 <br>
+ * 質數為一個大於1的整數，且除了1和本身以外，沒有其他的因數。 <br>
+ * 解答僅供參考，並非唯一解。<br>
  */
 public class PrimeFactorization {
 
