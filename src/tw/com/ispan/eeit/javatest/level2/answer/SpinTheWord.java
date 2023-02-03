@@ -15,13 +15,33 @@ import java.util.stream.Collectors;
 public class SpinTheWord {
 
 	public static void main(String[] args) {
-		System.out.println(java8Solution("Hey java developer"));
+		System.out.println(forLoop("Hey java developer"));
+		System.out.println(java8Solution("This is another test"));
+	}
+
+	/**
+	 * 一般for迴圈解法，將句子以split拆解，並逐個單字檢視長度，若符合條件則顛倒單字。
+	 */
+	public static String forLoop(String sentence) {
+
+		String[] words = sentence.split(" ");
+		String outputString = "";
+		for (String word : words) {
+			if (word.length() >= 5) {
+				outputString += new StringBuffer(word).reverse() + " ";
+			} else {
+				outputString += word + " ";
+			}
+
+		}
+		return outputString;
+
 	}
 
 	/**
 	 * 此解法結合了Java8新增的物件Stream，與其map()方法，<br>
 	 * 中間的判斷是使用三元運算子，
-	 * */
+	 */
 	public static String java8Solution(String sentence) {
 
 		String outputString = Arrays.stream(sentence.split(" "))
@@ -30,4 +50,5 @@ public class SpinTheWord {
 		return outputString;
 
 	}
+
 }
